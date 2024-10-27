@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharath Kumar S - Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>Bharath Kumar S</h1>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul id="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="intro">
+            <img src="./bharath.jpg" alt="Profile Picture" class="profile-pic">
+            <h2>Welcome to My Portfolio!</h2>
+            <p>I'm Bharath Kumar S, a passionate developer with expertise in Java, Python, SQL, HTML, and CSS.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>A highly motivated and quick-learning individual with a background in digital marketing and software
+            development. Proficient in Java, Python, SQL, CSS, and HTML, with certifications in key programming
+            languages and database management.</p>
+        <p>Currently studying Artificial Intelligence & Machine Learning, I am dedicated to expanding my skill set and
+            taking on new challenges in software development.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skill-container">
+            <div class="skill-item">
+                <h3>Java</h3>
+                <div class="skill-bar"><span style="width: 90%;"></span></div>
+            </div>
+            <div class="skill-item">
+                <h3>Python</h3>
+                <div class="skill-bar"><span style="width: 90%;"></span></div>
+            </div>
+            <div class="skill-item">
+                <h3>SQL</h3>
+                <div class="skill-bar"><span style="width: 90%;"></span></div>
+            </div>
+            <div class="skill-item">
+                <h3>HTML</h3>
+                <div class="skill-bar"><span style="width: 90%;"></span></div>
+            </div>
+            <div class="skill-item">
+                <h3>CSS</h3>
+                <div class="skill-bar"><span style="width: 90%;"></span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-gallery">
+            <div class="project-card">
+                <h3>AI Question Generation System</h3>
+                <p>Developed an automated exam system that dynamically generates questions and provides real-time
+                    evaluation with detailed statistics. This project enhances exam efficiency and reduces logistical
+                    challenges with secure assessment tools.</p>
+            </div>
+            <div class="project-card">
+                <h3>Smart Traffic Management System</h3>
+                <p>Implemented an intelligent traffic control system using machine learning to optimize traffic flow and
+                    reduce congestion. The system predicts traffic patterns and dynamically adjusts signal timings to
+                    improve commute times.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Personal Finance Tracker</h3>
+                <p>Created a web-based finance tracking application that helps users monitor their expenses, set
+                    budgets, and analyze spending trends. The app includes data visualization and personalized
+                    recommendations to assist users in achieving financial goals.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Health Monitoring App</h3>
+                <p>Developed a mobile application that tracks health metrics, including steps, heart rate, and sleep
+                    patterns. This project includes integration with wearable devices and provides insights for
+                    healthier lifestyle choices through real-time analytics.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <p>Or reach me directly at <a href="mailto:bharathkumarten@gmail.com">bharathkumarten@gmail.com</a></p>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
